@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hourly to Salary Converter - What Your Rate Pays Per Year</title>
+<meta name="description" content="Convert hourly pay to yearly salary: enter your rate, hours per week and weeks per year. See annual, monthly, weekly and daily gross pay.">
+<link rel="canonical" href="https://timecard-calculator.pages.dev/hourly-to-salary/">
+<meta property="og:title" content="Hourly to Salary Converter - What Your Rate Pays Per Year">
+<meta property="og:description" content="Convert hourly pay to yearly salary: enter your rate, hours per week and weeks per year. See annual, monthly, weekly and daily gross pay.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://timecard-calculator.pages.dev/hourly-to-salary/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebApplication","name":"Hourly to Salary Converter","url":"https://timecard-calculator.pages.dev/hourly-to-salary/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Convert an hourly wage to annual, monthly, weekly and daily pay.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you convert hourly pay to an annual salary?","acceptedAnswer":{"@type":"Answer","text":"Multiply your hourly rate by the hours you work per week, then by the weeks you work per year. At 40 hours and 52 weeks, $20/hour is $41,600 per year before taxes."}},{"@type":"Question","name":"Is $25 an hour a good salary?","acceptedAnswer":{"@type":"Answer","text":"$25/hour at 40 hours a week is about $52,000 a year before taxes - roughly $4,333 a month or $1,000 a week. Whether that is 'good' depends on your location and household costs."}},{"@type":"Question","name":"Does this include taxes?","acceptedAnswer":{"@type":"Answer","text":"No. These are gross (before tax) numbers. Your take-home pay depends on your state, filing status and benefits deductions."}}]}]}</script>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<nav class="site-nav" aria-label="Main">
+<a href="/">Time Card</a>
+<a href="/hours-calculator/">Hours Calculator</a>
+<a href="/timesheet/">Timesheet PDF</a>
+<a href="/hourly-to-salary/" class="active">Hourly to Salary</a>
+<a href="/overtime-rules/">Overtime Rules</a>
+</nav>
+</div></header>
+<main><div class="container">
+
+<h1>Hourly to Salary Converter</h1>
+<p>See what an hourly rate adds up to per year, month, week and day. Adjust hours per week
+and weeks per year for part-time or seasonal work.</p>
+<div class="card" id="hs-app">
+  <div class="grid3">
+    <div class="field"><label for="hs-hourly">Hourly rate ($)</label><input id="hs-hourly" type="number" min="0" step="0.01" placeholder="20"></div>
+    <div class="field"><label for="hs-hpw">Hours per week</label><input id="hs-hpw" type="number" min="1" max="80" step="1" value="40"></div>
+    <div class="field"><label for="hs-wpy">Weeks per year</label><input id="hs-wpy" type="number" min="1" max="52" step="1" value="52"></div>
+  </div>
+  <div class="answer-box" id="hs-result" style="display:none">
+    <div class="big" id="hs-annual"></div>
+    <div><span id="hs-monthly"></span> &middot; <span id="hs-weekly"></span> &middot; <span id="hs-daily"></span></div>
+    <div class="muted">Gross pay before taxes and deductions.</div>
+  </div>
+</div>
+<div class="ad-slot" data-ad-slot="reserved"><!-- reserved ad slot: paste AdSense unit here after approval --></div>
+<h2>Quick reference: common hourly rates at 40 h/week</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Hourly</th><th>Weekly</th><th>Monthly</th><th>Yearly</th></tr></thead>
+<tbody>
+<tr><td>$15.00</td><td>$600</td><td>$2,600</td><td>$31,200</td></tr>
+<tr><td>$17.00</td><td>$680</td><td>$2,947</td><td>$35,360</td></tr>
+<tr><td>$18.50</td><td>$740</td><td>$3,207</td><td>$38,480</td></tr>
+<tr><td>$20.00</td><td>$800</td><td>$3,467</td><td>$41,600</td></tr>
+<tr><td>$22.00</td><td>$880</td><td>$3,813</td><td>$45,760</td></tr>
+<tr><td>$25.00</td><td>$1,000</td><td>$4,333</td><td>$52,000</td></tr>
+<tr><td>$28.00</td><td>$1,120</td><td>$4,853</td><td>$58,240</td></tr>
+<tr><td>$30.00</td><td>$1,200</td><td>$5,200</td><td>$62,400</td></tr>
+<tr><td>$35.00</td><td>$1,400</td><td>$6,067</td><td>$72,800</td></tr>
+<tr><td>$40.00</td><td>$1,600</td><td>$6,933</td><td>$83,200</td></tr>
+<tr><td>$50.00</td><td>$2,000</td><td>$8,667</td><td>$104,000</td></tr>
+</tbody></table></div>
+<h2>Common questions</h2>
+<details><summary>How do you convert hourly pay to an annual salary?</summary><p>Multiply your hourly rate by the hours you work per week, then by the weeks you work per year. At 40 hours and 52 weeks, $20/hour is $41,600 per year before taxes.</p></details>
+<details><summary>Is $25 an hour a good salary?</summary><p>$25/hour at 40 hours a week is about $52,000 a year before taxes - roughly $4,333 a month or $1,000 a week. Whether that is 'good' depends on your location and household costs.</p></details>
+<details><summary>Does this include taxes?</summary><p>No. These are gross (before tax) numbers. Your take-home pay depends on your state, filing status and benefits deductions.</p></details>
+</div></main>
+<footer class="site-footer"><div class="container">
+<nav aria-label="Footer">
+<a href="/about/">About</a>
+<a href="/privacy/">Privacy</a>
+<a href="/contact/">Contact</a>
+<a href="/hours/">Shift hours index</a>
+</nav>
+<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+</div></footer>
+<script src="/assets/tools.js"></script>
+</body>
+</html>

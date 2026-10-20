@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hours Calculator - Hours Between Two Times (With Break)</title>
+<meta name="description" content="Calculate hours between a start and end time, minus an unpaid break. Handles overnight shifts. Shows hours:minutes and decimal hours.">
+<link rel="canonical" href="https://timecard-calculator.pages.dev/hours-calculator/">
+<meta property="og:title" content="Hours Calculator - Hours Between Two Times (With Break)">
+<meta property="og:description" content="Calculate hours between a start and end time, minus an unpaid break. Handles overnight shifts. Shows hours:minutes and decimal hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://timecard-calculator.pages.dev/hours-calculator/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebApplication","name":"Hours Calculator","url":"https://timecard-calculator.pages.dev/hours-calculator/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Calculate hours between two times with an optional unpaid break.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate hours between two times?","acceptedAnswer":{"@type":"Answer","text":"Subtract the start time from the end time. If the end is earlier than the start (a night shift), add 24 hours first. Then subtract any unpaid break."}},{"@type":"Question","name":"Is 8am to 5pm 8 or 9 hours?","acceptedAnswer":{"@type":"Answer","text":"It is 9 hours clock to clock. If you take an unpaid one-hour lunch, you work 8 paid hours."}},{"@type":"Question","name":"Can I use this for night shifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. A shift from 10pm to 6am is counted as 8 hours - the calculator assumes the end is the next morning when the end time is earlier than the start."}}]}]}</script>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<nav class="site-nav" aria-label="Main">
+<a href="/">Time Card</a>
+<a href="/hours-calculator/" class="active">Hours Calculator</a>
+<a href="/timesheet/">Timesheet PDF</a>
+<a href="/hourly-to-salary/">Hourly to Salary</a>
+<a href="/overtime-rules/">Overtime Rules</a>
+</nav>
+</div></header>
+<main><div class="container">
+
+<h1>Hours Calculator - Hours Between Two Times</h1>
+<p>Enter a start and end time to get the hours between them, with an optional unpaid break.
+Perfect for "how many hours did I work?" questions.</p>
+<div class="card" id="hb-app">
+  <div class="grid3">
+    <div class="field"><label for="hb-in">Start time</label><input id="hb-in" type="text" inputmode="numeric" placeholder="8:00 am"></div>
+    <div class="field"><label for="hb-out">End time</label><input id="hb-out" type="text" inputmode="numeric" placeholder="5:00 pm"></div>
+    <div class="field"><label for="hb-break">Unpaid break (min)</label><input id="hb-break" type="number" min="0" step="5" placeholder="30"></div>
+  </div>
+  <div class="answer-box" id="hb-result" style="display:none">
+    <div class="big"><span id="hb-hm"></span></div>
+    <div>= <b id="hb-dec"></b> (<span id="hb-gross"></span>)</div>
+    <div class="muted" id="hb-week"></div>
+  </div>
+</div>
+<div class="ad-slot" data-ad-slot="reserved"><!-- reserved ad slot: paste AdSense unit here after approval --></div>
+<h2>Tips</h2>
+<ul class="tight">
+<li>Accepts <code>9</code>, <code>9am</code>, <code>9:30</code>, <code>21:30</code> - whatever is natural to you.</li>
+<li>End time earlier than start time means the shift runs past midnight.</li>
+<li>Looking for a whole week? Use the <a href="/">time card calculator</a> instead.</li>
+<li>Common shifts answered instantly: <a href="/hours/">see the shift hours index</a>.</li>
+</ul>
+<h2>Common questions</h2>
+<details><summary>How do you calculate hours between two times?</summary><p>Subtract the start time from the end time. If the end is earlier than the start (a night shift), add 24 hours first. Then subtract any unpaid break.</p></details>
+<details><summary>Is 8am to 5pm 8 or 9 hours?</summary><p>It is 9 hours clock to clock. If you take an unpaid one-hour lunch, you work 8 paid hours.</p></details>
+<details><summary>Can I use this for night shifts?</summary><p>Yes. A shift from 10pm to 6am is counted as 8 hours - the calculator assumes the end is the next morning when the end time is earlier than the start.</p></details>
+</div></main>
+<footer class="site-footer"><div class="container">
+<nav aria-label="Footer">
+<a href="/about/">About</a>
+<a href="/privacy/">Privacy</a>
+<a href="/contact/">Contact</a>
+<a href="/hours/">Shift hours index</a>
+</nav>
+<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+</div></footer>
+<script src="/assets/tools.js"></script>
+</body>
+</html>

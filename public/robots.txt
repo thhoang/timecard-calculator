@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://timecard-calculator.pages.dev/sitemap.xml

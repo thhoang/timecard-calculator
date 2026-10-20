@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time Card Calculator - Free Weekly Work Hours & Overtime</title>
+<meta name="description" content="Free time card calculator: enter clock in/out times and breaks, get total hours, regular and overtime split, and estimated pay. Print or save as PDF. No sign-up.">
+<link rel="canonical" href="https://timecard-calculator.pages.dev/">
+<meta property="og:title" content="Time Card Calculator - Free Weekly Work Hours & Overtime">
+<meta property="og:description" content="Free time card calculator: enter clock in/out times and breaks, get total hours, regular and overtime split, and estimated pay. Print or save as PDF. No sign-up.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://timecard-calculator.pages.dev/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebApplication","name":"Time Card Calculator","url":"https://timecard-calculator.pages.dev/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Free weekly time card calculator with breaks and overtime. Totals work hours and estimates pay in the browser.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my work hours for the week?","acceptedAnswer":{"@type":"Answer","text":"Enter your clock-in and clock-out times for each day, plus unpaid break minutes. The calculator subtracts breaks, adds up the week, and splits regular and overtime hours using the rule you choose."}},{"@type":"Question","name":"What overtime rule should I use?","acceptedAnswer":{"@type":"Answer","text":"Most US workers use the federal rule: overtime starts after 40 hours in a workweek, paid at 1.5 times the regular rate. California, Alaska, Nevada and Colorado also have daily overtime rules - pick 'Daily 8h + weekly 40h' if your state has a daily threshold. Check our overtime rules guide for details."}},{"@type":"Question","name":"Does it work for night shifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. If your clock-out time is earlier than your clock-in time, the shift counts as running past midnight into the next day."}},{"@type":"Question","name":"Is my timesheet stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"Only in your own browser (local storage). Nothing is sent to a server, and clearing your browser data removes it. Use the Print button to save a PDF copy."}}]}]}</script>
+</head>
+<body>
+<header class="site-header"><div class="container">
+<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<nav class="site-nav" aria-label="Main">
+<a href="/" class="active">Time Card</a>
+<a href="/hours-calculator/">Hours Calculator</a>
+<a href="/timesheet/">Timesheet PDF</a>
+<a href="/hourly-to-salary/">Hourly to Salary</a>
+<a href="/overtime-rules/">Overtime Rules</a>
+</nav>
+</div></header>
+<main><div class="container">
+
+<h1>Free Time Card Calculator with Breaks &amp; Overtime</h1>
+<p>Add your clock-in and clock-out times for the week. The calculator totals your hours,
+subtracts unpaid breaks, and splits regular and overtime pay. Everything runs in your browser -
+no sign-up, nothing uploaded.</p>
+<div class="card" id="timecard-app">
+  <div class="grid3 no-print">
+    <div class="field"><label for="emp-name">Name (optional)</label><input id="emp-name" type="text" placeholder="Jane Doe"></div>
+    <div class="field"><label for="emp-company">Company (optional)</label><input id="emp-company" type="text" placeholder="Acme Inc"></div>
+    <div class="field"><label for="week-start">Week starting</label><input id="week-start" type="date"></div>
+  </div>
+  <p class="print-only">Time card - <span id="pp-name"></span></p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Day</th><th>Clock in</th><th>Clock out</th><th>Break (min)</th><th>Hours</th></tr></thead>
+    <tbody id="tc-body"><tr><th scope="row">Monday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Monday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Monday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Monday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Tuesday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Tuesday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Tuesday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Tuesday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Wednesday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Wednesday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Wednesday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Wednesday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Thursday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Thursday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Thursday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Thursday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Friday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Friday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Friday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Friday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Saturday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Saturday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Saturday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Saturday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
+<tr><th scope="row">Sunday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Sunday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Sunday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Sunday break minutes"></td><td class="day-total" aria-live="polite"></td></tr></tbody>
+  </table></div>
+  <div class="grid3 no-print">
+    <div class="field"><label for="ot-rule">Overtime rule</label>
+      <select id="ot-rule">
+        <option value="weekly40">Weekly: over 40 h (federal)</option>
+        <option value="daily8">Daily 8 h + weekly 40 h (CA-style)</option>
+        <option value="none">No overtime</option>
+      </select></div>
+    <div class="field"><label for="round">Round each day to</label>
+      <select id="round">
+        <option value="0">No rounding</option>
+        <option value="5">Nearest 5 min</option>
+        <option value="10">Nearest 10 min</option>
+        <option value="15">Nearest 15 min</option>
+      </select></div>
+    <div class="field"><label for="ot-mult">Overtime multiplier</label>
+      <select id="ot-mult">
+        <option value="1.5">1.5x (time and a half)</option>
+        <option value="2">2x (double time)</option>
+      </select></div>
+  </div>
+  <div class="field no-print" style="max-width:220px"><label for="rate">Hourly rate (optional, for pay)</label>
+    <input id="rate" type="number" min="0" step="0.01" placeholder="18.50"></div>
+  <div class="results" aria-live="polite">
+    <div class="row"><span>Total hours</span><b id="r-total">0:00</b></div>
+    <div class="row"><span>Regular hours</span><b id="r-regular">0:00</b></div>
+    <div class="row"><span>Overtime hours</span><b id="r-ot">0:00</b></div>
+    <div class="row grand" id="r-pay-row" style="display:none"><span>Estimated pay</span><b id="r-pay"></b></div>
+    <p><small id="r-pay-note"></small></p>
+  </div>
+  <div class="btn-row no-print">
+    <button id="tc-print" type="button">Print / save as PDF</button>
+    <button id="tc-clear" type="button" class="ghost">Clear week</button>
+  </div>
+</div>
+<div class="ad-slot" data-ad-slot="reserved"><!-- reserved ad slot: paste AdSense unit here after approval --></div>
+<h2>How to use this time card calculator</h2>
+<ul class="tight">
+<li>Type times the way you think of them: <code>8</code>, <code>8am</code>, <code>8:30</code> or <code>17:30</code> all work.</li>
+<li>Enter unpaid breaks in minutes (a 30-minute lunch = <code>30</code>).</li>
+<li>Night shift past midnight? Enter the actual times - the calculator handles the date change.</li>
+<li>Add your hourly rate to see estimated pay with overtime at time-and-a-half or double time.</li>
+<li>Print or save the filled time card as a PDF for your records or your manager.</li>
+</ul>
+<h2>Common questions</h2>
+<details><summary>How do I calculate my work hours for the week?</summary><p>Enter your clock-in and clock-out times for each day, plus unpaid break minutes. The calculator subtracts breaks, adds up the week, and splits regular and overtime hours using the rule you choose.</p></details>
+<details><summary>What overtime rule should I use?</summary><p>Most US workers use the federal rule: overtime starts after 40 hours in a workweek, paid at 1.5 times the regular rate. California, Alaska, Nevada and Colorado also have daily overtime rules - pick 'Daily 8h + weekly 40h' if your state has a daily threshold. Check our overtime rules guide for details.</p></details>
+<details><summary>Does it work for night shifts?</summary><p>Yes. If your clock-out time is earlier than your clock-in time, the shift counts as running past midnight into the next day.</p></details>
+<details><summary>Is my timesheet stored anywhere?</summary><p>Only in your own browser (local storage). Nothing is sent to a server, and clearing your browser data removes it. Use the Print button to save a PDF copy.</p></details>
+<h2>More free work-hours tools</h2>
+<ul>
+<li><a href="/hours-calculator/">Hours calculator</a> - hours between any two times, with breaks.</li>
+<li><a href="/timesheet/">Printable weekly timesheet</a> - fill in and print a clean timesheet PDF.</li>
+<li><a href="/hourly-to-salary/">Hourly to salary converter</a> - see what your rate adds up to per year.</li>
+<li><a href="/hours/">Shift hours index</a> - quick answers like "8am to 5pm is how many hours".</li>
+</ul>
+
+</div></main>
+<footer class="site-footer"><div class="container">
+<nav aria-label="Footer">
+<a href="/about/">About</a>
+<a href="/privacy/">Privacy</a>
+<a href="/contact/">Contact</a>
+<a href="/hours/">Shift hours index</a>
+</nav>
+<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+</div></footer>
+<script src="/assets/tools.js"></script>
+</body>
+</html>
