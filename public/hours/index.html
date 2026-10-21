@@ -1,84 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shift Hours Index - How Many Hours Between Common Shift Times</title>
-<meta name="description" content="Quick answers to how many hours are between common shift times: 8am to 5pm, 9am to 5pm, 7am to 3pm and more, with break and weekly totals.">
+<title>Shift Hours Index - How Many Hours Between Common Start and End Times</title>
+<meta name="description" content="How many hours are between common shift times: 8am to 5pm, 9am to 5pm, 7am to 3pm and more, with paid hours, weekly and bi-weekly totals and overtime scenarios.">
 <link rel="canonical" href="https://timecard-calculator.pages.dev/hours/">
-<meta property="og:title" content="Shift Hours Index - How Many Hours Between Common Shift Times">
-<meta property="og:description" content="Quick answers to how many hours are between common shift times: 8am to 5pm, 9am to 5pm, 7am to 3pm and more, with break and weekly totals.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://timecard-calculator.pages.dev/hours/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
-<link rel="stylesheet" href="/assets/style.css">
 
+<meta property="og:title" content="Shift Hours Index - How Many Hours Between Common Start and End Times">
+<meta property="og:description" content="How many hours are between common shift times: 8am to 5pm, 9am to 5pm, 7am to 3pm and more, with paid hours, weekly and bi-weekly totals and overtime scenarios.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Time Card Calculator">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://timecard-calculator.pages.dev/hours/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0c1b33">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a58d6'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<link rel="stylesheet" href="/assets/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://timecard-calculator.pages.dev/#website","url":"https://timecard-calculator.pages.dev/","name":"Time Card Calculator","inLanguage":"en-US","description":"Free time card, work hours, overtime and pay calculators","publisher":{"@id":"https://timecard-calculator.pages.dev/#org"}},{"@type":"Organization","@id":"https://timecard-calculator.pages.dev/#org","name":"Time Card Calculator","url":"https://timecard-calculator.pages.dev/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the most common shift length?","acceptedAnswer":{"@type":"Answer","text":"Eight paid hours is the familiar full-time day: nine hours clock to clock with a one-hour unpaid lunch, or eight and a half hours with a 30-minute lunch."}},{"@type":"Question","name":"How do I convert a shift to hours?","acceptedAnswer":{"@type":"Answer","text":"Subtract the start time from the end time (add 12 hours to PM times), then subtract any unpaid meal."}},{"@type":"Question","name":"What if my shift crosses midnight?","acceptedAnswer":{"@type":"Answer","text":"Use the hours calculator, which handles overnight shifts."}},{"@type":"Question","name":"Which overtime rule do these pages use?","acceptedAnswer":{"@type":"Answer","text":"The federal weekly rule: hours over 40 in a workweek are paid at 1.5 times the regular rate, as described by the U.S. Department of Labor."}}]},{"@type":"CollectionPage","@id":"https://timecard-calculator.pages.dev/hours/#webpage","url":"https://timecard-calculator.pages.dev/hours/","name":"Shift Hours Index - How Many Hours Between Common Start and End Times","description":"How many hours are between common shift times: 8am to 5pm, 9am to 5pm, 7am to 3pm and more, with paid hours, weekly and bi-weekly totals and overtime scenarios.","inLanguage":"en-US","dateModified":"2026-10-21","isPartOf":{"@id":"https://timecard-calculator.pages.dev/#website"},"breadcrumb":{"@id":"https://timecard-calculator.pages.dev/hours/#breadcrumb"}},{"@type":"ItemList","name":"Shift Hours Index","numberOfItems":35,"itemListElement":[{"@type":"ListItem","position":1,"name":"6am to 2pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-2pm/"},{"@type":"ListItem","position":2,"name":"6am to 3pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-3pm/"},{"@type":"ListItem","position":3,"name":"6am to 4pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-4pm/"},{"@type":"ListItem","position":4,"name":"6am to 5pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-5pm/"},{"@type":"ListItem","position":5,"name":"6am to 6pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-6pm/"},{"@type":"ListItem","position":6,"name":"6am to 7pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-7pm/"},{"@type":"ListItem","position":7,"name":"6am to 8pm hours","url":"https://timecard-calculator.pages.dev/hours/6am-to-8pm/"},{"@type":"ListItem","position":8,"name":"7am to 2pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-2pm/"},{"@type":"ListItem","position":9,"name":"7am to 3pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-3pm/"},{"@type":"ListItem","position":10,"name":"7am to 4pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-4pm/"},{"@type":"ListItem","position":11,"name":"7am to 5pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-5pm/"},{"@type":"ListItem","position":12,"name":"7am to 6pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-6pm/"},{"@type":"ListItem","position":13,"name":"7am to 7pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-7pm/"},{"@type":"ListItem","position":14,"name":"7am to 8pm hours","url":"https://timecard-calculator.pages.dev/hours/7am-to-8pm/"},{"@type":"ListItem","position":15,"name":"8am to 2pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-2pm/"},{"@type":"ListItem","position":16,"name":"8am to 3pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-3pm/"},{"@type":"ListItem","position":17,"name":"8am to 4pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-4pm/"},{"@type":"ListItem","position":18,"name":"8am to 5pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-5pm/"},{"@type":"ListItem","position":19,"name":"8am to 6pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-6pm/"},{"@type":"ListItem","position":20,"name":"8am to 7pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-7pm/"},{"@type":"ListItem","position":21,"name":"8am to 8pm hours","url":"https://timecard-calculator.pages.dev/hours/8am-to-8pm/"},{"@type":"ListItem","position":22,"name":"9am to 2pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-2pm/"},{"@type":"ListItem","position":23,"name":"9am to 3pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-3pm/"},{"@type":"ListItem","position":24,"name":"9am to 4pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-4pm/"},{"@type":"ListItem","position":25,"name":"9am to 5pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-5pm/"},{"@type":"ListItem","position":26,"name":"9am to 6pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-6pm/"},{"@type":"ListItem","position":27,"name":"9am to 7pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-7pm/"},{"@type":"ListItem","position":28,"name":"9am to 8pm hours","url":"https://timecard-calculator.pages.dev/hours/9am-to-8pm/"},{"@type":"ListItem","position":29,"name":"10am to 2pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-2pm/"},{"@type":"ListItem","position":30,"name":"10am to 3pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-3pm/"},{"@type":"ListItem","position":31,"name":"10am to 4pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-4pm/"},{"@type":"ListItem","position":32,"name":"10am to 5pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-5pm/"},{"@type":"ListItem","position":33,"name":"10am to 6pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-6pm/"},{"@type":"ListItem","position":34,"name":"10am to 7pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-7pm/"},{"@type":"ListItem","position":35,"name":"10am to 8pm hours","url":"https://timecard-calculator.pages.dev/hours/10am-to-8pm/"}]},{"@type":"BreadcrumbList","@id":"https://timecard-calculator.pages.dev/hours/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://timecard-calculator.pages.dev/"},{"@type":"ListItem","position":2,"name":"Shift hours","item":"https://timecard-calculator.pages.dev/hours/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
-<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Time Card <span>Calculator</span></a>
 <nav class="site-nav" aria-label="Main">
-<a href="/">Time Card</a>
-<a href="/hours-calculator/" class="active">Hours Calculator</a>
-<a href="/timesheet/">Timesheet PDF</a>
-<a href="/hourly-to-salary/">Hourly to Salary</a>
-<a href="/overtime-rules/">Overtime Rules</a>
+<a href="/calculators/">Calculators</a>
+<a href="/guides/">Guides</a>
+<a href="/hours/" class="active">Shift Hours</a>
+<a href="/hourly-to-annual/">Pay Tables</a>
+<a href="/about/">About</a>
 </nav>
 </div></header>
-<main><div class="container">
-
-<h1>Shift Hours Index - Quick Answers</h1>
-<p>"9 to 5" is the famous one, but shifts start and end all over the clock. Pick yours for an
-instant answer with break and weekly totals, or use the
-<a href="/hours-calculator/">hours calculator</a> for any times.</p>
-<ul class="list-plain">
-<li><a href="/hours/6am-to-2pm/">6am to 2pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-3pm/">6am to 3pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-4pm/">6am to 4pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-5pm/">6am to 5pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-6pm/">6am to 6pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-7pm/">6am to 7pm is how many hours?</a></li>
-<li><a href="/hours/6am-to-8pm/">6am to 8pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-2pm/">7am to 2pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-3pm/">7am to 3pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-4pm/">7am to 4pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-5pm/">7am to 5pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-6pm/">7am to 6pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-7pm/">7am to 7pm is how many hours?</a></li>
-<li><a href="/hours/7am-to-8pm/">7am to 8pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-2pm/">8am to 2pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-3pm/">8am to 3pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-4pm/">8am to 4pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-5pm/">8am to 5pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-6pm/">8am to 6pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-7pm/">8am to 7pm is how many hours?</a></li>
-<li><a href="/hours/8am-to-8pm/">8am to 8pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-2pm/">9am to 2pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-3pm/">9am to 3pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-4pm/">9am to 4pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-5pm/">9am to 5pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-6pm/">9am to 6pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-7pm/">9am to 7pm is how many hours?</a></li>
-<li><a href="/hours/9am-to-8pm/">9am to 8pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-2pm/">10am to 2pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-3pm/">10am to 3pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-4pm/">10am to 4pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-5pm/">10am to 5pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-6pm/">10am to 6pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-7pm/">10am to 7pm is how many hours?</a></li>
-<li><a href="/hours/10am-to-8pm/">10am to 8pm is how many hours?</a></li>
-</ul>
-
+<main id="main"><div class="container">
+<nav class="crumbs no-print" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Shift hours</li></ol></nav><div class="page-head"><h1>Shift Hours Index: How Many Hours Is Your Shift?</h1><p class="article-meta">Updated <time datetime="2026-10-21">October 21, 2026</time> &middot; Index &middot; <a href="/editorial-policy/">How we write</a></p><p class="lead">Thirty-five common start and finish times, each answered with paid hours, weekly totals, pay and overtime.</p></div><div class="layout"><div class="main-col"><article class="prose"><p>&ldquo;What time is that in hours?&rdquo; is the question behind a lot of schedule searches. Each page below answers it for one shift and goes further: clock-to-clock hours, paid hours after lunch, weekly and bi-weekly totals, pay at several hourly rates, overtime scenarios and a break table. Pick your start time, then your finish time. For a time not listed, use the <a href="/hours-calculator/">hours calculator</a>.</p>
+<h2>Shifts starting at 6am</h2><div class="chips"><a class="chip" href="/hours/6am-to-2pm/">6am to 2pm <small>(8 h)</small></a><a class="chip" href="/hours/6am-to-3pm/">6am to 3pm <small>(9 h)</small></a><a class="chip" href="/hours/6am-to-4pm/">6am to 4pm <small>(10 h)</small></a><a class="chip" href="/hours/6am-to-5pm/">6am to 5pm <small>(11 h)</small></a><a class="chip" href="/hours/6am-to-6pm/">6am to 6pm <small>(12 h)</small></a><a class="chip" href="/hours/6am-to-7pm/">6am to 7pm <small>(13 h)</small></a><a class="chip" href="/hours/6am-to-8pm/">6am to 8pm <small>(14 h)</small></a></div><h2>Shifts starting at 7am</h2><div class="chips"><a class="chip" href="/hours/7am-to-2pm/">7am to 2pm <small>(7 h)</small></a><a class="chip" href="/hours/7am-to-3pm/">7am to 3pm <small>(8 h)</small></a><a class="chip" href="/hours/7am-to-4pm/">7am to 4pm <small>(9 h)</small></a><a class="chip" href="/hours/7am-to-5pm/">7am to 5pm <small>(10 h)</small></a><a class="chip" href="/hours/7am-to-6pm/">7am to 6pm <small>(11 h)</small></a><a class="chip" href="/hours/7am-to-7pm/">7am to 7pm <small>(12 h)</small></a><a class="chip" href="/hours/7am-to-8pm/">7am to 8pm <small>(13 h)</small></a></div><h2>Shifts starting at 8am</h2><div class="chips"><a class="chip" href="/hours/8am-to-2pm/">8am to 2pm <small>(6 h)</small></a><a class="chip" href="/hours/8am-to-3pm/">8am to 3pm <small>(7 h)</small></a><a class="chip" href="/hours/8am-to-4pm/">8am to 4pm <small>(8 h)</small></a><a class="chip" href="/hours/8am-to-5pm/">8am to 5pm <small>(9 h)</small></a><a class="chip" href="/hours/8am-to-6pm/">8am to 6pm <small>(10 h)</small></a><a class="chip" href="/hours/8am-to-7pm/">8am to 7pm <small>(11 h)</small></a><a class="chip" href="/hours/8am-to-8pm/">8am to 8pm <small>(12 h)</small></a></div><h2>Shifts starting at 9am</h2><div class="chips"><a class="chip" href="/hours/9am-to-2pm/">9am to 2pm <small>(5 h)</small></a><a class="chip" href="/hours/9am-to-3pm/">9am to 3pm <small>(6 h)</small></a><a class="chip" href="/hours/9am-to-4pm/">9am to 4pm <small>(7 h)</small></a><a class="chip" href="/hours/9am-to-5pm/">9am to 5pm <small>(8 h)</small></a><a class="chip" href="/hours/9am-to-6pm/">9am to 6pm <small>(9 h)</small></a><a class="chip" href="/hours/9am-to-7pm/">9am to 7pm <small>(10 h)</small></a><a class="chip" href="/hours/9am-to-8pm/">9am to 8pm <small>(11 h)</small></a></div><h2>Shifts starting at 10am</h2><div class="chips"><a class="chip" href="/hours/10am-to-2pm/">10am to 2pm <small>(4 h)</small></a><a class="chip" href="/hours/10am-to-3pm/">10am to 3pm <small>(5 h)</small></a><a class="chip" href="/hours/10am-to-4pm/">10am to 4pm <small>(6 h)</small></a><a class="chip" href="/hours/10am-to-5pm/">10am to 5pm <small>(7 h)</small></a><a class="chip" href="/hours/10am-to-6pm/">10am to 6pm <small>(8 h)</small></a><a class="chip" href="/hours/10am-to-7pm/">10am to 7pm <small>(9 h)</small></a><a class="chip" href="/hours/10am-to-8pm/">10am to 8pm <small>(10 h)</small></a></div>
+<aside class="ad-slot" data-ad-slot="in-content-1" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT in-content-1: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside>
+<h2>How to use these pages</h2><ul><li>Clock-to-clock hours are simply end minus start. Paid hours subtract an unpaid meal.</li><li>Weekly totals assume five identical shifts. Bi-weekly totals are two workweeks, with overtime figured separately in each.</li><li>Overtime figures use the federal weekly rule (over 40 hours in the workweek), as described by the U.S. Department of Labor. State rules may differ; see the <a href="/overtime-rules/">overtime rules guide</a>.</li></ul></article><section class="faq" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2><details><summary>What is the most common shift length?</summary><p>Eight paid hours is the familiar full-time day: nine hours clock to clock with a one-hour unpaid lunch, or eight and a half hours with a 30-minute lunch.</p></details>
+<details><summary>How do I convert a shift to hours?</summary><p>Subtract the start time from the end time (add 12 hours to PM times), then subtract any unpaid meal.</p></details>
+<details><summary>What if my shift crosses midnight?</summary><p>Use the hours calculator, which handles overnight shifts.</p></details>
+<details><summary>Which overtime rule do these pages use?</summary><p>The federal weekly rule: hours over 40 in a workweek are paid at 1.5 times the regular rate, as described by the U.S. Department of Labor.</p></details></section><aside class="ad-slot ad-short" data-ad-slot="in-content-2" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT in-content-2: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside><section class="related"><h2>Related tools and guides</h2><div class="card-grid"><a class="tile" href="/hours-calculator/"><b>Hours Calculator</b><span>Hours calculator: find the hours and minutes between two times or two dates.</span></a><a class="tile" href="/time-card-calculator/"><b>Time Card Calculator</b><span>Free time card calculator for weekly, bi-weekly and semi-monthly pay periods.</span></a><a class="tile" href="/lunch-break-calculator/"><b>Lunch Break Calculator</b><span>Lunch break calculator: subtract an unpaid meal break from your shift to see paid hours, auto-deduct rules, weekly totals and what the break costs in pay.</span></a><a class="tile" href="/overtime-calculator/"><b>Overtime Pay Calculator</b><span>Overtime pay calculator with federal weekly overtime and state presets for California, Alaska, Nevada and Colorado: daily overtime, double time, bonuses in the regular rate.</span></a></div></section></div><aside class="side no-print" aria-label="Related pages"><div class="side-box"><h2>Related</h2><ul><li><a href="/hours-calculator/">Hours Calculator</a></li><li><a href="/time-card-calculator/">Time Card Calculator</a></li><li><a href="/lunch-break-calculator/">Lunch Break Calculator</a></li><li><a href="/overtime-calculator/">Overtime Pay Calculator</a></li></ul></div><div class="side-box"><h2>Private by design</h2><p style="margin:0;font-size:.92rem">Everything on this page is calculated in your browser. Nothing you type is sent to us.</p></div></aside></div>
 </div></main>
 <footer class="site-footer"><div class="container">
-<nav aria-label="Footer">
-<a href="/about/">About</a>
-<a href="/privacy/">Privacy</a>
-<a href="/contact/">Contact</a>
-<a href="/hours/">Shift hours index</a>
-</nav>
-<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+<div class="foot-grid">
+<div><h2>Time Card Calculator</h2><p style="margin:0">Free, private work-hours calculators and plain-English guides. Results are estimates, not legal or payroll advice.</p></div>
+<div><h2>Calculators</h2><ul><li><a href="/time-card-calculator/">Time card calculator</a></li><li><a href="/overtime-calculator/">Overtime calculator</a></li><li><a href="/hours-calculator/">Hours calculator</a></li><li><a href="/paycheck-calculator/">Paycheck estimator</a></li><li><a href="/hourly-to-salary/">Hourly to salary</a></li><li><a href="/timesheet/">Printable timesheet</a></li></ul></div>
+<div><h2>Guides</h2><ul><li><a href="/overtime-rules/">Overtime rules by state</a></li><li><a href="/guides/exempt-vs-non-exempt/">Exempt vs non-exempt</a></li><li><a href="/guides/meal-and-rest-break-laws/">Meal and rest breaks</a></li><li><a href="/guides/rounding-time-cards/">Rounding time cards</a></li><li><a href="/guides/bi-weekly-vs-semi-monthly-pay/">Bi-weekly vs semi-monthly</a></li></ul></div>
+<div><h2>Site</h2><ul><li><a href="/about/">About</a></li><li><a href="/editorial-policy/">Editorial policy</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+</div>
+<div class="copyright">&copy; 2026 Time Card Calculator. Calculators run in your browser; your entries are not sent anywhere. Official-source rules were last checked October 21, 2026.</div>
 </div></footer>
-<script src="/assets/tools.js"></script>
+
 </body>
 </html>

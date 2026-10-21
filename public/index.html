@@ -1,119 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Time Card Calculator - Free Weekly Work Hours & Overtime</title>
-<meta name="description" content="Free time card calculator: enter clock in/out times and breaks, get total hours, regular and overtime split, and estimated pay. Print or save as PDF. No sign-up.">
+<title>Time Card Calculator - Free Work Hours, Overtime &amp; Pay Calculators</title>
+<meta name="description" content="Free time card, overtime, hours and paycheck calculators with step-by-step results, worked examples and plain-English guides based on US Department of Labor sources.">
 <link rel="canonical" href="https://timecard-calculator.pages.dev/">
-<meta property="og:title" content="Time Card Calculator - Free Weekly Work Hours & Overtime">
-<meta property="og:description" content="Free time card calculator: enter clock in/out times and breaks, get total hours, regular and overtime split, and estimated pay. Print or save as PDF. No sign-up.">
+
+<meta property="og:title" content="Time Card Calculator - Free Work Hours, Overtime &amp; Pay Calculators">
+<meta property="og:description" content="Free time card, overtime, hours and paycheck calculators with step-by-step results, worked examples and plain-English guides based on US Department of Labor sources.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Time Card Calculator">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://timecard-calculator.pages.dev/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0c1b33">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a58d6'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
 <link rel="stylesheet" href="/assets/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebApplication","name":"Time Card Calculator","url":"https://timecard-calculator.pages.dev/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Free weekly time card calculator with breaks and overtime. Totals work hours and estimates pay in the browser.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my work hours for the week?","acceptedAnswer":{"@type":"Answer","text":"Enter your clock-in and clock-out times for each day, plus unpaid break minutes. The calculator subtracts breaks, adds up the week, and splits regular and overtime hours using the rule you choose."}},{"@type":"Question","name":"What overtime rule should I use?","acceptedAnswer":{"@type":"Answer","text":"Most US workers use the federal rule: overtime starts after 40 hours in a workweek, paid at 1.5 times the regular rate. California, Alaska, Nevada and Colorado also have daily overtime rules - pick 'Daily 8h + weekly 40h' if your state has a daily threshold. Check our overtime rules guide for details."}},{"@type":"Question","name":"Does it work for night shifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. If your clock-out time is earlier than your clock-in time, the shift counts as running past midnight into the next day."}},{"@type":"Question","name":"Is my timesheet stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"Only in your own browser (local storage). Nothing is sent to a server, and clearing your browser data removes it. Use the Print button to save a PDF copy."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://timecard-calculator.pages.dev/#website","url":"https://timecard-calculator.pages.dev/","name":"Time Card Calculator","inLanguage":"en-US","description":"Free time card, work hours, overtime and pay calculators","publisher":{"@id":"https://timecard-calculator.pages.dev/#org"}},{"@type":"Organization","@id":"https://timecard-calculator.pages.dev/#org","name":"Time Card Calculator","url":"https://timecard-calculator.pages.dev/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my work hours?","acceptedAnswer":{"@type":"Answer","text":"Subtract your clock-in time from your clock-out time and subtract any unpaid break. Our time card calculator does this for every day in a week, bi-weekly or semi-monthly period, and shows each step."}},{"@type":"Question","name":"Is my data private?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every calculator runs in your browser. The times and rates you enter are not sent to any server. A time card you fill in is saved only in your own browser's local storage, and you can clear it with the Reset button."}},{"@type":"Question","name":"Are these calculators free?","acceptedAnswer":{"@type":"Answer","text":"Yes, with no sign-up. The site is built to be supported by advertising later, but the tools will stay free."}},{"@type":"Question","name":"Where do your overtime and break rules come from?","acceptedAnswer":{"@type":"Answer","text":"From the U.S. Department of Labor, the IRS and state labor departments. Each page that states a rule links to its source and shows the date we last checked it. Where we could not confirm a rule from an official source, we left it out."}},{"@type":"Question","name":"Can I use this to run payroll?","acceptedAnswer":{"@type":"Answer","text":"No. These are calculators for estimates and for checking your own numbers. Payroll has legal requirements this site does not cover. See the disclaimer."}}]},{"@type":"WebPage","@id":"https://timecard-calculator.pages.dev/#webpage","url":"https://timecard-calculator.pages.dev/","name":"Time Card Calculator - Free Work Hours, Overtime & Pay Calculators","description":"Free time card, overtime, hours and paycheck calculators with step-by-step results, worked examples and plain-English guides based on US Department of Labor sources.","inLanguage":"en-US","dateModified":"2026-10-21","isPartOf":{"@id":"https://timecard-calculator.pages.dev/#website"}}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
-<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Time Card <span>Calculator</span></a>
 <nav class="site-nav" aria-label="Main">
-<a href="/" class="active">Time Card</a>
-<a href="/hours-calculator/">Hours Calculator</a>
-<a href="/timesheet/">Timesheet PDF</a>
-<a href="/hourly-to-salary/">Hourly to Salary</a>
-<a href="/overtime-rules/">Overtime Rules</a>
+<a href="/calculators/">Calculators</a>
+<a href="/guides/">Guides</a>
+<a href="/hours/">Shift Hours</a>
+<a href="/hourly-to-annual/">Pay Tables</a>
+<a href="/about/">About</a>
 </nav>
 </div></header>
-<main><div class="container">
-
-<h1>Free Time Card Calculator with Breaks &amp; Overtime</h1>
-<p>Add your clock-in and clock-out times for the week. The calculator totals your hours,
-subtracts unpaid breaks, and splits regular and overtime pay. Everything runs in your browser -
-no sign-up, nothing uploaded.</p>
-<div class="card" id="timecard-app">
-  <div class="grid3 no-print">
-    <div class="field"><label for="emp-name">Name (optional)</label><input id="emp-name" type="text" placeholder="Jane Doe"></div>
-    <div class="field"><label for="emp-company">Company (optional)</label><input id="emp-company" type="text" placeholder="Acme Inc"></div>
-    <div class="field"><label for="week-start">Week starting</label><input id="week-start" type="date"></div>
-  </div>
-  <p class="print-only">Time card - <span id="pp-name"></span></p>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Day</th><th>Clock in</th><th>Clock out</th><th>Break (min)</th><th>Hours</th></tr></thead>
-    <tbody id="tc-body"><tr><th scope="row">Monday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Monday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Monday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Monday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Tuesday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Tuesday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Tuesday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Tuesday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Wednesday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Wednesday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Wednesday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Wednesday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Thursday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Thursday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Thursday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Thursday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Friday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Friday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Friday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Friday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Saturday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Saturday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Saturday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Saturday break minutes"></td><td class="day-total" aria-live="polite"></td></tr>
-<tr><th scope="row">Sunday</th><td><input class="in" type="text" inputmode="numeric" placeholder="8:00" aria-label="Sunday clock in"></td><td><input class="out" type="text" inputmode="numeric" placeholder="17:00" aria-label="Sunday clock out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Sunday break minutes"></td><td class="day-total" aria-live="polite"></td></tr></tbody>
-  </table></div>
-  <div class="grid3 no-print">
-    <div class="field"><label for="ot-rule">Overtime rule</label>
-      <select id="ot-rule">
-        <option value="weekly40">Weekly: over 40 h (federal)</option>
-        <option value="daily8">Daily 8 h + weekly 40 h (CA-style)</option>
-        <option value="none">No overtime</option>
-      </select></div>
-    <div class="field"><label for="round">Round each day to</label>
-      <select id="round">
-        <option value="0">No rounding</option>
-        <option value="5">Nearest 5 min</option>
-        <option value="10">Nearest 10 min</option>
-        <option value="15">Nearest 15 min</option>
-      </select></div>
-    <div class="field"><label for="ot-mult">Overtime multiplier</label>
-      <select id="ot-mult">
-        <option value="1.5">1.5x (time and a half)</option>
-        <option value="2">2x (double time)</option>
-      </select></div>
-  </div>
-  <div class="field no-print" style="max-width:220px"><label for="rate">Hourly rate (optional, for pay)</label>
-    <input id="rate" type="number" min="0" step="0.01" placeholder="18.50"></div>
-  <div class="results" aria-live="polite">
-    <div class="row"><span>Total hours</span><b id="r-total">0:00</b></div>
-    <div class="row"><span>Regular hours</span><b id="r-regular">0:00</b></div>
-    <div class="row"><span>Overtime hours</span><b id="r-ot">0:00</b></div>
-    <div class="row grand" id="r-pay-row" style="display:none"><span>Estimated pay</span><b id="r-pay"></b></div>
-    <p><small id="r-pay-note"></small></p>
-  </div>
-  <div class="btn-row no-print">
-    <button id="tc-print" type="button">Print / save as PDF</button>
-    <button id="tc-clear" type="button" class="ghost">Clear week</button>
-  </div>
-</div>
-<div class="ad-slot" data-ad-slot="reserved"><!-- reserved ad slot: paste AdSense unit here after approval --></div>
-<h2>How to use this time card calculator</h2>
-<ul class="tight">
-<li>Type times the way you think of them: <code>8</code>, <code>8am</code>, <code>8:30</code> or <code>17:30</code> all work.</li>
-<li>Enter unpaid breaks in minutes (a 30-minute lunch = <code>30</code>).</li>
-<li>Night shift past midnight? Enter the actual times - the calculator handles the date change.</li>
-<li>Add your hourly rate to see estimated pay with overtime at time-and-a-half or double time.</li>
-<li>Print or save the filled time card as a PDF for your records or your manager.</li>
-</ul>
-<h2>Common questions</h2>
-<details><summary>How do I calculate my work hours for the week?</summary><p>Enter your clock-in and clock-out times for each day, plus unpaid break minutes. The calculator subtracts breaks, adds up the week, and splits regular and overtime hours using the rule you choose.</p></details>
-<details><summary>What overtime rule should I use?</summary><p>Most US workers use the federal rule: overtime starts after 40 hours in a workweek, paid at 1.5 times the regular rate. California, Alaska, Nevada and Colorado also have daily overtime rules - pick 'Daily 8h + weekly 40h' if your state has a daily threshold. Check our overtime rules guide for details.</p></details>
-<details><summary>Does it work for night shifts?</summary><p>Yes. If your clock-out time is earlier than your clock-in time, the shift counts as running past midnight into the next day.</p></details>
-<details><summary>Is my timesheet stored anywhere?</summary><p>Only in your own browser (local storage). Nothing is sent to a server, and clearing your browser data removes it. Use the Print button to save a PDF copy.</p></details>
-<h2>More free work-hours tools</h2>
+<main id="main"><div class="container">
+<section class="hero"><h1>Work hours, time cards and overtime - worked out step by step</h1><p>Free calculators for time cards, overtime, pay and schedules, with every step shown and plain-English guides based on official US sources. No sign-up, nothing uploaded.</p><div class="pill-row"><a class="pill" href="/time-card-calculator/">Time card calculator</a><a class="pill" href="/overtime-calculator/">Overtime calculator</a><a class="pill" href="/hours-calculator/">Hours calculator</a><a class="pill" href="/paycheck-calculator/">Paycheck estimator</a><a class="pill" href="/timesheet/">Printable timesheet</a></div><div class="trust-row"><span>Runs in your browser</span><span>Sources and check dates on every rule</span><span>Print or save as PDF</span></div></section><div class="layout"><div class="main-col"><section class="tool" data-tool="hb" data-p="hb"  aria-labelledby="hb-title"><h2 class="tool-title" id="hb-title">Quick answer: hours between two times</h2><p class="tool-sub">Type times the way you say them: 8, 8am, 8:30, 5:15 pm, 17:15 or 1715.</p><p class="print-only"><b>Quick answer: hours between two times</b> &middot; <span data-today></span></p><div class="grid2"><div class="field "><label for="hb-stime">Start time</label><input id="hb-stime" type="text" placeholder="8:00 am" autocomplete="off"></div><div class="field "><label for="hb-etime">End time</label><input id="hb-etime" type="text" placeholder="5:00 pm" autocomplete="off"></div></div><div class="grid3"><div class="field "><label for="hb-break">Unpaid break (minutes)</label><input id="hb-break" type="number" min="0" step="5" placeholder="30"></div></div><div class="answer-box" id="hb-answer" aria-live="polite" hidden><div class="big" id="hb-big"></div><div id="hb-sub"></div></div><p class="empty-state" id="hb-empty">Enter your numbers above and the result appears here.</p><div id="hb-extra"></div><div class="breakdown" id="hb-bd" hidden><h3>How this was calculated</h3><ol class="steps" id="hb-steps"></ol></div><div class="btn-row no-print"><button type="button" data-print>Print this result</button><button type="button" class="ghost" data-reset>Reset</button></div></section><div class="section-title"><h2>Time cards and hours</h2></div><div class="card-grid"><a class="tile" href="/time-card-calculator/"><b>Time Card Calculator</b><span>Free time card calculator for weekly, bi-weekly and semi-monthly pay periods.</span></a><a class="tile" href="/bi-weekly-time-card-calculator/"><b>Bi-Weekly Time Card Calculator</b><span>Bi-weekly time card calculator: enter two weeks of clock in/out times, see overtime figured separately for each workweek, total hours and gross pay for the 14-day pay period.</span></a><a class="tile" href="/semi-monthly-time-card-calculator/"><b>Semi-Monthly Time Card Calculator</b><span>Semi-monthly time card calculator for pay periods that run the 1st to the 15th and the 16th to month end.</span></a><a class="tile" href="/hours-calculator/"><b>Hours Calculator</b><span>Hours calculator: find the hours and minutes between two times or two dates.</span></a><a class="tile" href="/timesheet/"><b>Printable Weekly Timesheet</b><span>Free printable weekly timesheet: type clock in/out times and breaks, get totals and overtime, then print or save a PDF with signature lines.</span></a><a class="tile" href="/time-duration-calculator/"><b>Time Duration Calculator</b><span>Add and subtract hours and minutes, or add a duration to a clock time.</span></a><a class="tile" href="/lunch-break-calculator/"><b>Lunch Break Calculator</b><span>Lunch break calculator: subtract an unpaid meal break from your shift to see paid hours, auto-deduct rules, weekly totals and what the break costs in pay.</span></a><a class="tile" href="/work-schedule-planner/"><b>Work Schedule Planner</b><span>Work schedule and shift planner: lay out 5-2, 4-3, 3-4, 2-2-3 and custom shift patterns on a calendar and see hours per week, averages and 40-hour overtime flags.</span></a></div><div class="section-title"><h2>Overtime and pay</h2></div><div class="card-grid"><a class="tile" href="/overtime-calculator/"><b>Overtime Pay Calculator</b><span>Overtime pay calculator with federal weekly overtime and state presets for California, Alaska, Nevada and Colorado: daily overtime, double time, bonuses in the regular rate.</span></a><a class="tile" href="/shift-differential-calculator/"><b>Shift Differential Calculator</b><span>Shift differential calculator: add a night, evening or weekend premium to your hourly rate.</span></a><a class="tile" href="/paycheck-calculator/"><b>Paycheck Estimator</b><span>Simple paycheck estimator: turn hourly pay or gross wages into estimated take-home pay using 2026 IRS federal withholding tables, Social Security and Medicare.</span></a><a class="tile" href="/hourly-to-salary/"><b>Hourly to Salary Calculator</b><span>Hourly to salary calculator: convert an hourly wage to annual, monthly, bi-weekly, semi-monthly, weekly and daily pay, with hours per week and unpaid weeks off.</span></a><a class="tile" href="/salary-to-hourly/"><b>Salary to Hourly Calculator</b><span>Salary to hourly calculator: divide an annual salary by the hours you really work.</span></a><a class="tile" href="/pto-accrual-calculator/"><b>PTO Accrual Calculator</b><span>PTO accrual calculator: find how many vacation hours you earn per pay period or per hour worked, project your balance and see the effect of a PTO cap.</span></a></div><div class="section-title"><h2>Converters and rounding</h2></div><div class="card-grid"><a class="tile" href="/decimal-hours-converter/"><b>Decimal Hours Converter</b><span>Convert hours and minutes to decimal hours (7:45 = 7.75) and decimal hours back to hh:mm.</span></a><a class="tile" href="/minutes-to-decimal-chart/"><b>Minutes to Decimal Chart</b><span>Minutes to decimal hours chart for payroll: every minute from 0 to 59 converted to a decimal, plus a calculator for any number of minutes.</span></a><a class="tile" href="/time-rounding-calculator/"><b>Time Rounding Calculator</b><span>Time rounding calculator: see how rounding punches to 5, 6 or 15 minutes (the 7-minute rule) changes a shift, with a rounding chart and a plain-English look at federal rules.</span></a><a class="tile" href="/military-time-converter/"><b>Military Time Converter</b><span>Military time converter: change 12-hour AM/PM time to 24-hour military time and back.</span></a></div><aside class="ad-slot" data-ad-slot="home-1" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT home-1: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside><div class="section-title"><h2>Quick answers</h2></div><div class="chips"><a class="chip" href="/hours/8am-to-5pm/">8am to 5pm is how many hours?</a><a class="chip" href="/hours/9am-to-5pm/">9am to 5pm</a><a class="chip" href="/hours/7am-to-3pm/">7am to 3pm</a><a class="chip" href="/hours-per-year/40-hours-a-week/">40 hours a week in a year</a><a class="chip" href="/hourly-to-annual/20-dollars-an-hour/">$20 an hour is how much a year</a><a class="chip" href="/hourly-to-annual/15-dollars-an-hour/">$15 an hour a year</a><a class="chip" href="/decimal-hours/8-hours-chart/">8 hours in decimal</a><a class="chip" href="/hours/">All shift hours</a></div><div class="section-title"><h2>Guides</h2><a href="/guides/">All guides</a></div><div class="card-grid"><a class="tile" href="/overtime-rules/"><span class="tag">Guide</span><b>Overtime Rules by State</b><span>Plain-English overtime guide: the federal 40-hour rule plus daily overtime and double time in California, Alaska, Nevada and Colorado, with examples and sources.</span></a><a class="tile" href="/guides/exempt-vs-non-exempt/"><span class="tag">Guide</span><b>Exempt vs Non-Exempt</b><span>Exempt vs non-exempt explained: who gets overtime under the FLSA, the salary basis test, why job title is not enough, and how to check your own status before you track hours.</span></a><a class="tile" href="/guides/how-to-calculate-hours-worked-with-breaks/"><span class="tag">Guide</span><b>Calculating Hours Worked with Breaks</b><span>How to calculate hours worked with breaks: which breaks are paid or unpaid, the formula, worked examples with lunch and rest breaks, and what federal regulations say.</span></a><a class="tile" href="/guides/rounding-time-cards/"><span class="tag">Guide</span><b>Rounding Time Cards Legally</b><span>Rounding time cards: the 29 CFR 785.48 rule, how the 7-minute rule works, how to test whether rounding is fair, and when employers get into trouble.</span></a><a class="tile" href="/guides/how-to-fill-in-a-paper-time-card/"><span class="tag">Guide</span><b>Filling In a Paper Time Card</b><span>How to fill in a paper time card: what each column means, how to write times, record breaks, total hours in hours and minutes, convert to decimals and avoid common mistakes.</span></a><a class="tile" href="/guides/bi-weekly-vs-semi-monthly-pay/"><span class="tag">Guide</span><b>Bi-Weekly vs Semi-Monthly Pay</b><span>Bi-weekly vs semi-monthly pay explained: 26 versus 24 paychecks, how the amount of each check changes, three-paycheck months, overtime and which to expect.</span></a></div><div class="prose"><h2>Why this site is different</h2>
+<p>Most time card calculators give a number and nothing else. Here you can see <i>how</i> the number was reached: each calculator lists the steps (minutes between times, unpaid breaks, regular versus overtime hours, pay) so you can check it against a pay stub, learn the method, or spot a mistake.</p>
 <ul>
-<li><a href="/hours-calculator/">Hours calculator</a> - hours between any two times, with breaks.</li>
-<li><a href="/timesheet/">Printable weekly timesheet</a> - fill in and print a clean timesheet PDF.</li>
-<li><a href="/hourly-to-salary/">Hourly to salary converter</a> - see what your rate adds up to per year.</li>
-<li><a href="/hours/">Shift hours index</a> - quick answers like "8am to 5pm is how many hours".</li>
-</ul>
-
+<li><b>Real-life inputs.</b> Overnight shifts, date-crossing spans, unpaid meals, bi-weekly and semi-monthly pay periods, workweek start days, bonuses in the regular rate, state overtime presets.</li>
+<li><b>Worked examples and long explanations</b> under every tool, written in plain English.</li>
+<li><b>Sources, not guesses.</b> Overtime, break and tax rules link to the U.S. Department of Labor, the IRS or the state agency, with the date we last checked. See our <a href="/editorial-policy/">editorial policy</a>.</li>
+<li><b>Printable.</b> Every result can be printed or saved as a PDF without menus or ads.</li>
+<li><b>Private.</b> Calculations happen on your device.</li>
+</ul><h2>How to get an accurate result</h2>
+<ol>
+<li>Use the actual times you worked, not the scheduled ones.</li>
+<li>Enter only <i>unpaid</i> meal breaks; paid rest breaks stay inside your hours.</li>
+<li>Choose the overtime rule for the state where you work and the workweek start day your employer uses.</li>
+<li>Compare the answer with your pay stub. If they differ, read <a href="/guides/time-card-mistakes-and-how-to-fix-them/">time card mistakes and how to fix them</a>.</li>
+</ol></div><section class="faq" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2><details><summary>How do I calculate my work hours?</summary><p>Subtract your clock-in time from your clock-out time and subtract any unpaid break. Our time card calculator does this for every day in a week, bi-weekly or semi-monthly period, and shows each step.</p></details>
+<details><summary>Is my data private?</summary><p>Yes. Every calculator runs in your browser. The times and rates you enter are not sent to any server. A time card you fill in is saved only in your own browser's local storage, and you can clear it with the Reset button.</p></details>
+<details><summary>Are these calculators free?</summary><p>Yes, with no sign-up. The site is built to be supported by advertising later, but the tools will stay free.</p></details>
+<details><summary>Where do your overtime and break rules come from?</summary><p>From the U.S. Department of Labor, the IRS and state labor departments. Each page that states a rule links to its source and shows the date we last checked it. Where we could not confirm a rule from an official source, we left it out.</p></details>
+<details><summary>Can I use this to run payroll?</summary><p>No. These are calculators for estimates and for checking your own numbers. Payroll has legal requirements this site does not cover. See the disclaimer.</p></details></section><aside class="ad-slot ad-short" data-ad-slot="home-2" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT home-2: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside></div><aside class="side no-print" aria-label="Related pages"><div class="side-box"><h2>Private by design</h2><p style="margin:0;font-size:.92rem">Everything on this page is calculated in your browser. Nothing you type is sent to us.</p></div></aside></div>
 </div></main>
 <footer class="site-footer"><div class="container">
-<nav aria-label="Footer">
-<a href="/about/">About</a>
-<a href="/privacy/">Privacy</a>
-<a href="/contact/">Contact</a>
-<a href="/hours/">Shift hours index</a>
-</nav>
-<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+<div class="foot-grid">
+<div><h2>Time Card Calculator</h2><p style="margin:0">Free, private work-hours calculators and plain-English guides. Results are estimates, not legal or payroll advice.</p></div>
+<div><h2>Calculators</h2><ul><li><a href="/time-card-calculator/">Time card calculator</a></li><li><a href="/overtime-calculator/">Overtime calculator</a></li><li><a href="/hours-calculator/">Hours calculator</a></li><li><a href="/paycheck-calculator/">Paycheck estimator</a></li><li><a href="/hourly-to-salary/">Hourly to salary</a></li><li><a href="/timesheet/">Printable timesheet</a></li></ul></div>
+<div><h2>Guides</h2><ul><li><a href="/overtime-rules/">Overtime rules by state</a></li><li><a href="/guides/exempt-vs-non-exempt/">Exempt vs non-exempt</a></li><li><a href="/guides/meal-and-rest-break-laws/">Meal and rest breaks</a></li><li><a href="/guides/rounding-time-cards/">Rounding time cards</a></li><li><a href="/guides/bi-weekly-vs-semi-monthly-pay/">Bi-weekly vs semi-monthly</a></li></ul></div>
+<div><h2>Site</h2><ul><li><a href="/about/">About</a></li><li><a href="/editorial-policy/">Editorial policy</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+</div>
+<div class="copyright">&copy; 2026 Time Card Calculator. Calculators run in your browser; your entries are not sent anywhere. Official-source rules were last checked October 21, 2026.</div>
 </div></footer>
-<script src="/assets/tools.js"></script>
+<script src="/assets/calc.js" defer></script>
+<script src="/assets/tools.js" defer></script>
 </body>
 </html>
