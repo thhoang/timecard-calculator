@@ -6,8 +6,8 @@ import re
 BASE = "https://timecard-calculator.pages.dev"
 SITE = "Time Card Calculator"
 # The date the cited official sources were last read. Shown on pages and used for sitemap lastmod.
-CHECKED = "2026-10-21"
-CHECKED_LONG = "October 21, 2026"
+CHECKED = "2026-10-22"
+CHECKED_LONG = "October 22, 2026"
 REPO_ISSUES = "https://github.com/thhoang/timecard-calculator/issues"
 
 # Official sources reused across pages: key -> (label, url)
@@ -25,7 +25,7 @@ SRC = {
     "ca_ot": ("California Department of Industrial Relations (DLSE): Overtime", "https://www.dir.ca.gov/dlse/faq_overtime.htm"),
     "ak_ot": ("Alaska Department of Labor: Wage and Hour (AS 23.10.060, overtime)", "https://labor.alaska.gov/lss/forms/pam100.pdf"),
     "nv_ot": ("Nevada Office of the Labor Commissioner: Advisory Opinion AO-2025-05, daily or weekly overtime (NRS 608.018)", "https://labor.nv.gov/uploadedFiles/labornvgov/content/Employer/AO-2025-05%20Daily%20Overtime%20or%20Weekly%20Overtime.pdf"),
-    "co_ot": ("Colorado Department of Labor and Employment: COMPS Order, Rule 4 (overtime)", "https://cdle.colorado.gov/sites/cdle/files/Adopted%20COMPS%20Order%20%2339%207%20CCR%201103-1%20%5Baccessible%5D.pdf"),
+    "co_ot": ("Colorado Department of Labor and Employment: COMPS Order #40, Rule 4 (overtime)", "https://cdle.colorado.gov/sites/cdle/files/adopted_2026_comps_order_%2340_7_ccr_1103-1_12.8.25.pdf"),
     "irs15": ("IRS Publication 15 (2026), Employer's Tax Guide", "https://www.irs.gov/publications/p15"),
     "irs15t": ("IRS Publication 15-T (2026), Federal Income Tax Withholding Methods", "https://www.irs.gov/publications/p15t"),
 }
