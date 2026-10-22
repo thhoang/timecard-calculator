@@ -1,102 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Printable Weekly Timesheet - Fill In & Save as PDF</title>
-<meta name="description" content="Free printable weekly timesheet: enter clock times and breaks, get totals, then print or save as PDF. Signature lines included. No sign-up.">
+<title>Printable Weekly Timesheet - Fill In Online and Save as PDF</title>
+<meta name="description" content="Free printable weekly timesheet: type clock in/out times and breaks, get totals and overtime, then print or save a PDF with signature lines. No sign-up.">
 <link rel="canonical" href="https://timecard-calculator.pages.dev/timesheet/">
-<meta property="og:title" content="Printable Weekly Timesheet - Fill In & Save as PDF">
-<meta property="og:description" content="Free printable weekly timesheet: enter clock times and breaks, get totals, then print or save as PDF. Signature lines included. No sign-up.">
+
+<meta property="og:title" content="Printable Weekly Timesheet - Fill In Online and Save as PDF">
+<meta property="og:description" content="Free printable weekly timesheet: type clock in/out times and breaks, get totals and overtime, then print or save a PDF with signature lines. No sign-up.">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Time Card Calculator">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://timecard-calculator.pages.dev/timesheet/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230b5fff'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0c1b33">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a58d6'/><path d='M50 25v25l18 10' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
 <link rel="stylesheet" href="/assets/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"WebApplication","name":"Printable Weekly Timesheet","url":"https://timecard-calculator.pages.dev/timesheet/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Fill in a weekly timesheet online and print or save it as a PDF, with totals and signature lines.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I save this timesheet as a PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes. Fill it in, press Print / save as PDF, and choose 'Save as PDF' as the printer in your browser. You get a clean one-page timesheet."}},{"@type":"Question","name":"Is this timesheet accepted by employers?","acceptedAnswer":{"@type":"Answer","text":"It has the standard fields (name, week, daily in/out, breaks, totals, signature lines). Most small businesses accept a printed timesheet like this, but check what your employer or payroll provider requires."}}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://timecard-calculator.pages.dev/#website","url":"https://timecard-calculator.pages.dev/","name":"Time Card Calculator","inLanguage":"en-US","description":"Free time card, work hours, overtime and pay calculators","publisher":{"@id":"https://timecard-calculator.pages.dev/#org"}},{"@type":"Organization","@id":"https://timecard-calculator.pages.dev/#org","name":"Time Card Calculator","url":"https://timecard-calculator.pages.dev/"},{"@type":"WebApplication","name":"Printable Weekly Timesheet","url":"https://timecard-calculator.pages.dev/timesheet/","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","description":"Free printable weekly timesheet: type clock in/out times and breaks, get totals and overtime, then print or save a PDF with signature lines. No sign-up.","inLanguage":"en-US","isAccessibleForFree":true,"publisher":{"@id":"https://timecard-calculator.pages.dev/#org"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I save this timesheet as a PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes. Press Print this result, then choose Save as PDF as the printer in the print dialog."}},{"@type":"Question","name":"Will my employer accept this timesheet?","acceptedAnswer":{"@type":"Answer","text":"It has the standard fields: name, week, daily in/out, breaks, totals and signature lines. Many small employers accept a printed timesheet like this, but confirm with your employer or payroll provider."}},{"@type":"Question","name":"Is the data stored anywhere?","acceptedAnswer":{"@type":"Answer","text":"Only in your own browser's local storage. Press Reset to remove it."}},{"@type":"Question","name":"Does the timesheet include overtime?","acceptedAnswer":{"@type":"Answer","text":"Yes. Choose the overtime rule for your state; the totals show regular and overtime hours."}},{"@type":"Question","name":"Can I print more than one week?","acceptedAnswer":{"@type":"Answer","text":"Fill one week, print it, then press Reset and start the next week. For two weeks on one card use the bi-weekly time card."}}]},{"@type":"WebPage","@id":"https://timecard-calculator.pages.dev/timesheet/#webpage","url":"https://timecard-calculator.pages.dev/timesheet/","name":"Printable Weekly Timesheet - Fill In Online and Save as PDF","description":"Free printable weekly timesheet: type clock in/out times and breaks, get totals and overtime, then print or save a PDF with signature lines. No sign-up.","inLanguage":"en-US","dateModified":"2026-10-21","isPartOf":{"@id":"https://timecard-calculator.pages.dev/#website"},"breadcrumb":{"@id":"https://timecard-calculator.pages.dev/timesheet/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://timecard-calculator.pages.dev/timesheet/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://timecard-calculator.pages.dev/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://timecard-calculator.pages.dev/calculators/"},{"@type":"ListItem","position":3,"name":"Printable Weekly Timesheet","item":"https://timecard-calculator.pages.dev/timesheet/"}]}]}</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
-<a class="brand" href="/">Time Card <span>Calculator</span></a>
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Time Card <span>Calculator</span></a>
 <nav class="site-nav" aria-label="Main">
-<a href="/">Time Card</a>
-<a href="/hours-calculator/">Hours Calculator</a>
-<a href="/timesheet/" class="active">Timesheet PDF</a>
-<a href="/hourly-to-salary/">Hourly to Salary</a>
-<a href="/overtime-rules/">Overtime Rules</a>
+<a href="/calculators/" class="active">Calculators</a>
+<a href="/guides/">Guides</a>
+<a href="/hours/">Shift Hours</a>
+<a href="/hourly-to-annual/">Pay Tables</a>
+<a href="/about/">About</a>
 </nav>
 </div></header>
-<main><div class="container">
-
-<h1>Printable Weekly Timesheet Generator</h1>
-<p>Fill in the fields below, then print or save a clean timesheet as PDF. The printed version
-drops the buttons and menus - just the timesheet, totals and signature lines.</p>
-<div class="card" id="ts-app">
-  <div id="timecard-app">
-  <p class="print-only">Weekly timesheet - <span id="pp-name"></span></p>
-  <div class="grid3 no-print">
-    <div class="field"><label for="emp-name">Employee name</label><input id="emp-name" type="text" placeholder="Jane Doe"></div>
-    <div class="field"><label for="emp-company">Company</label><input id="emp-company" type="text" placeholder="Acme Inc"></div>
-    <div class="field"><label for="week-start" id="ts-week-label">Week starting</label><input id="week-start" type="date"></div>
-  </div>
-  <div class="table-wrap"><table>
-    <thead><tr><th>Day</th><th>Clock in</th><th>Clock out</th><th>Break (min)</th><th>Hours</th></tr></thead>
-    <tbody id="tc-body"><tr><th scope="row">Monday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Monday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Monday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Monday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Tuesday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Tuesday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Tuesday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Tuesday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Wednesday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Wednesday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Wednesday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Wednesday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Thursday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Thursday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Thursday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Thursday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Friday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Friday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Friday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Friday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Saturday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Saturday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Saturday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Saturday break"></td><td class="day-total"></td></tr>
-<tr><th scope="row">Sunday</th><td><input class="in" type="text" placeholder="8:00" aria-label="Sunday in"></td><td><input class="out" type="text" placeholder="17:00" aria-label="Sunday out"></td><td><input class="brk" type="number" min="0" step="5" placeholder="30" aria-label="Sunday break"></td><td class="day-total"></td></tr></tbody>
-  </table></div>
-  <div class="grid3 no-print">
-    <div class="field"><label for="ot-rule">Overtime rule</label>
-      <select id="ot-rule">
-        <option value="weekly40">Weekly: over 40 h (federal)</option>
-        <option value="daily8">Daily 8 h + weekly 40 h (CA-style)</option>
-        <option value="none">No overtime</option>
-      </select></div>
-    <div class="field"><label for="round">Round each day to</label>
-      <select id="round"><option value="0">No rounding</option><option value="5">5 min</option><option value="10">10 min</option><option value="15">15 min</option></select></div>
-    <div class="field"><label for="rate">Hourly rate (optional)</label><input id="rate" type="number" min="0" step="0.01" placeholder="18.50"></div>
-  </div>
-  <input id="ot-mult" type="hidden" value="1.5">
-  <div class="results" aria-live="polite">
-    <div class="row"><span>Total hours</span><b id="r-total">0:00</b></div>
-    <div class="row"><span>Regular hours</span><b id="r-regular">0:00</b></div>
-    <div class="row"><span>Overtime hours</span><b id="r-ot">0:00</b></div>
-    <div class="row grand" id="r-pay-row" style="display:none"><span>Estimated pay</span><b id="r-pay"></b></div>
-    <p><small id="r-pay-note"></small></p>
-  </div>
-  </div>
-  <div class="print-only">
-    <p>Employee signature: ________________________&nbsp;&nbsp;&nbsp;Date: ____________</p>
-    <p>Supervisor signature: ______________________&nbsp;&nbsp;&nbsp;Date: ____________</p>
-  </div>
-  <div class="btn-row no-print">
-    <button id="tc-print" type="button">Print / save as PDF</button>
-    <button id="tc-clear" type="button" class="ghost">Clear</button>
-  </div>
-</div>
-<div class="ad-slot" data-ad-slot="reserved"><!-- reserved ad slot: paste AdSense unit here after approval --></div>
-<h2>Tips for a clean printout</h2>
-<ul class="tight">
-<li>Use your browser's print dialog and pick "Save as PDF" to email the timesheet.</li>
-<li>The header, buttons and this text disappear on the printed copy - only the timesheet prints.</li>
-<li>Your entries stay in this browser, so you can come back and adjust before printing.</li>
+<main id="main"><div class="container">
+<nav class="crumbs no-print" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/calculators/">Calculators</a></li><li aria-current="page">Printable Weekly Timesheet</li></ol></nav><div class="page-head"><h1>Printable Weekly Timesheet</h1><p class="lead">Fill in the week on screen and print a clean timesheet with your name, company, daily hours, totals and signature lines. The buttons, menus and ads drop off the printed page.</p></div><div class="layout"><div class="main-col"><section class="tool" data-tool="timecard" data-p="tc" data-period="weekly" data-locked aria-labelledby="tc-title"><h2 class="tool-title" id="tc-title">Weekly timesheet</h2><p class="tool-sub">Fill in the week, then print or save as PDF. Signature lines are added to the printout.</p><p class="print-only"><b>Weekly timesheet</b> &middot; <span data-today></span></p><div class="grid3"><div class="field "><label for="tc-period">Pay period type</label><select id="tc-period"><option value="weekly" selected>Weekly (7 days)</option></select></div><div class="field"><label for="tc-start" id="tc-start-label">Pay period starts</label><input id="tc-start" type="date"></div><div class="field "><label for="tc-wk">Workweek starts on</label><select id="tc-wk"><option value="1" selected>Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option><option value="6">Saturday</option><option value="0">Sunday</option></select><div class="hint">Overtime is counted per workweek</div></div></div><div class="grid2 no-print"><div class="field "><label for="tc-name">Employee name (optional)</label><input id="tc-name" type="text" placeholder="Jane Doe" autocomplete="off"></div><div class="field "><label for="tc-company">Company (optional)</label><input id="tc-company" type="text" placeholder="Acme Inc" autocomplete="off"></div></div><p class="print-only" id="tc-pp"></p><div class="table-wrap"><table class="tc-table"><thead><tr><th scope="col">Date</th><th scope="col">Clock in</th><th scope="col">Clock out</th><th scope="col">Break (min)</th><th scope="col" class="num">Hours</th></tr></thead><tbody id="tc-body"></tbody></table></div><div class="grid2 no-print"><div class="field "><label for="tc-rule">Overtime rule</label><select id="tc-rule"><option value="federal" selected>Federal (FLSA): over 40 hours in the workweek</option><option value="ca">California: daily 8 h / 12 h, weekly 40 h, 7th day</option><option value="ak">Alaska: over 8 h a day and over 40 h a week</option><option value="nv_low">Nevada, pay under 1.5x state minimum wage: daily 8 h + weekly 40 h</option><option value="nv_high">Nevada, pay at or above 1.5x state minimum wage: weekly 40 h</option><option value="co">Colorado: over 12 h a day and over 40 h a week</option><option value="none">No overtime (just total the hours)</option></select></div><div class="field "><label for="tc-round">Round each punch to</label><select id="tc-round"><option value="0" selected>No rounding</option><option value="5">Nearest 5 min</option><option value="6">Nearest 6 min (1/10 h)</option><option value="15">Nearest 15 min (7-minute rule)</option></select></div><div class="field "><label for="tc-rate">Hourly rate (optional)</label><input id="tc-rate" type="number" min="0" step="0.01" placeholder="18.50"></div><div class="field "><label for="tc-prior">Hours already worked earlier this workweek</label><input id="tc-prior" type="text" placeholder="0"><div class="hint">Only if your period starts mid-week, e.g. 12 or 12:30</div></div></div><div class="answer-box" id="tc-answer" aria-live="polite" hidden><div class="big" id="tc-big"></div><div id="tc-sub"></div></div><p class="empty-state" id="tc-empty">Enter your numbers above and the result appears here.</p><div id="tc-extra"></div><div class="breakdown" id="tc-bd" hidden><h3>How this was calculated</h3><ol class="steps" id="tc-steps"></ol></div><div class="print-only"><p>Employee signature: ____________________________ Date: ____________</p><p>Supervisor signature: ___________________________ Date: ____________</p></div><div class="btn-row no-print"><button type="button" data-print>Print this result</button><button type="button" class="secondary no-print" data-fill>Fill an example week</button><button type="button" class="ghost" data-reset>Reset</button></div></section><div class="below-tool prose"><h2>How to print or save the timesheet as a PDF</h2>
+<ol>
+<li>Type your name, company and the first day of the week.</li>
+<li>Enter clock-in and clock-out times and unpaid breaks for each day you worked.</li>
+<li>Press <b>Print this result</b>.</li>
+<li>In the print dialog choose <b>Save as PDF</b> as the destination (Chrome, Edge) or <b>PDF</b> &rarr; <b>Save as PDF</b> (Safari, macOS) to create a file you can e-mail. Choose your printer to print on paper.</li>
+</ol>
+<p>The printout contains the filled table, your totals, the calculation steps and two signature lines. Menus, buttons and advertising are hidden so it stays a one-page document.</p>
+<h2>What a good timesheet contains</h2>
+<p>The federal recordkeeping regulation for covered employees (29 CFR 516.2) requires employers to keep, among other items, the time of day and day of week on which the employee's workweek begins, the hours worked on each workday and the total hours worked each workweek. This timesheet records the date, time in, time out, unpaid break and daily total, and it prints the week-start date so the workweek is clear. Pay rate and pay amounts are usually kept by your employer's payroll system.</p>
+<p>For a walkthrough of each column and how to double-check the arithmetic by hand, read <a href="/guides/how-to-read-a-timesheet/">how to read a timesheet</a>, or learn how to <a href="/guides/how-to-fill-in-a-paper-time-card/">fill in a paper time card</a> if your workplace still uses cards.</p>
+<aside class="ad-slot" data-ad-slot="in-content-1" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT in-content-1: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside>
+<h2>Example of a completed week</h2><div class="example"><h3>Part-time retail schedule</h3>
+<p>Monday 9:00 am to 2:00 pm (no break) = 5:00; Wednesday 12:00 pm to 8:30 pm with a 30-minute break = 8:00; Saturday 10:00 am to 4:00 pm with a 30-minute break = 5:30. Total = 5:00 + 8:00 + 5:30 = <b>18:30</b> (18.50 hours). At $16.00/hour that is $296.00 gross for the week.</p></div>
+<h2>Using the timesheet for different jobs</h2>
+<ul>
+<li><b>Employees:</b> keep your own copy to check your pay stub against.</li>
+<li><b>Freelancers and contractors:</b> a signed timesheet attached to an invoice shows exactly what you billed. See <a href="/guides/tracking-hours-for-freelancers-and-contractors/">tracking hours for freelancers</a>.</li>
+<li><b>Small business owners:</b> collect one per employee each week; your payroll provider or accountant tells you what records to keep.</li>
 </ul>
-<h2>Common questions</h2>
-<details><summary>Can I save this timesheet as a PDF?</summary><p>Yes. Fill it in, press Print / save as PDF, and choose 'Save as PDF' as the printer in your browser. You get a clean one-page timesheet.</p></details>
-<details><summary>Is this timesheet accepted by employers?</summary><p>It has the standard fields (name, week, daily in/out, breaks, totals, signature lines). Most small businesses accept a printed timesheet like this, but check what your employer or payroll provider requires.</p></details>
+<h2>A printable template for real-world situations</h2>
+<table class="plain" style="width:auto"><tbody>
+<tr><td><b>Split shifts</b></td><td>Enter the full span (first clock-in to last clock-out) and put the gap in the break box. A 7:00 am to 11:00 am shift plus 3:00 pm to 6:00 pm is 11 hours clock to clock; enter a break of 240 minutes to get 7:00.</td></tr>
+<tr><td><b>Overnight work</b></td><td>Enter the real times. 10:00 pm to 6:30 am is counted as 8 hours 30 minutes on the day it started.</td></tr>
+<tr><td><b>Unpaid lunch</b></td><td>Enter the minutes; the printed total excludes them.</td></tr>
+<tr><td><b>Days off</b></td><td>Leave the row blank. It prints as an empty line.</td></tr>
+</tbody></table>
+<p>Tip: if you need two weeks on one sheet, use the <a href="/bi-weekly-time-card-calculator/">bi-weekly time card</a>, which prints 14 dated rows.</p>
+<h2>Keeping signed copies</h2>
+<p>Print two copies if you want to keep one: one for the employer, one for yourself. Photograph signed pages and store them somewhere you can find later. If your employer has a required form, use this printout as your private cross-check and compare totals every period.</p>
+<h2>Using the timesheet as a weekly habit</h2>
+<p>People who check their hours weekly find mistakes while they are still easy to fix. Fill the timesheet on Friday afternoon (or at the end of your workweek), compare it with the hours you expect on your next stub and keep a copy. If the stub differs, you already have your own record. The same routine works for contractors who invoice weekly.</p>
+<h2>For managers: reviewing a stack of timesheets</h2>
+<p>Check that each sheet has the week start date, daily totals that match the in and out times, the break deducted and a signature. Look first at the weeks with the longest hours: that is where overtime and errors cluster. Compare the totals with the schedule, and ask the employee about any difference before payroll runs.</p></div><section class="faq" aria-labelledby="faq-h"><h2 id="faq-h">Frequently asked questions</h2><details><summary>Can I save this timesheet as a PDF?</summary><p>Yes. Press Print this result, then choose Save as PDF as the printer in the print dialog.</p></details>
+<details><summary>Will my employer accept this timesheet?</summary><p>It has the standard fields: name, week, daily in/out, breaks, totals and signature lines. Many small employers accept a printed timesheet like this, but confirm with your employer or payroll provider.</p></details>
+<details><summary>Is the data stored anywhere?</summary><p>Only in your own browser's local storage. Press Reset to remove it.</p></details>
+<details><summary>Does the timesheet include overtime?</summary><p>Yes. Choose the overtime rule for your state; the totals show regular and overtime hours.</p></details>
+<details><summary>Can I print more than one week?</summary><p>Fill one week, print it, then press Reset and start the next week. For two weeks on one card use the bi-weekly time card.</p></details></section><section class="sources" aria-labelledby="src-h"><h2 id="src-h">Sources and last checked</h2><ul><li><a href="https://www.dol.gov/agencies/whd/fact-sheets/23-flsa-overtime-pay" rel="noopener">U.S. Department of Labor, Fact Sheet #23: Overtime Pay Requirements of the FLSA</a></li><li><a href="https://www.law.cornell.edu/cfr/text/29/516.2" rel="noopener">29 CFR 516.2 - Employees subject to minimum wage or minimum wage and overtime provisions (required records)</a></li></ul><p class="updated">Last checked: <time datetime="2026-10-21">October 21, 2026</time>. Rules change; confirm with the linked agency before relying on a figure. This is general information, not legal or payroll advice - see our <a href="/disclaimer/">disclaimer</a>.</p></section><aside class="ad-slot ad-short" data-ad-slot="in-content-2" aria-label="Advertisement" role="complementary"><!-- EMPTY AD SLOT in-content-2: fixed height reserved, no ad code installed. Add the ad unit here after approval. --></aside><section class="related"><h2>Related tools and guides</h2><div class="card-grid"><a class="tile" href="/time-card-calculator/"><b>Time Card Calculator</b><span>Free time card calculator for weekly, bi-weekly and semi-monthly pay periods.</span></a><a class="tile" href="/guides/how-to-read-a-timesheet/"><b>How to Read a Timesheet</b><span>How to read a timesheet: what each column means, how to verify daily and weekly totals, spot overtime, match it to a pay stub and what records employers must keep.</span></a><a class="tile" href="/guides/how-to-fill-in-a-paper-time-card/"><b>Filling In a Paper Time Card</b><span>How to fill in a paper time card: what each column means, how to write times, record breaks, total hours in hours and minutes, convert to decimals and avoid common mistakes.</span></a><a class="tile" href="/bi-weekly-time-card-calculator/"><b>Bi-Weekly Time Card Calculator</b><span>Bi-weekly time card calculator: enter two weeks of clock in/out times, see overtime figured separately for each workweek, total hours and gross pay for the 14-day pay period.</span></a></div></section></div><aside class="side no-print" aria-label="Related pages"><div class="side-box"><h2>Related</h2><ul><li><a href="/time-card-calculator/">Time Card Calculator</a></li><li><a href="/guides/how-to-read-a-timesheet/">How to Read a Timesheet</a></li><li><a href="/guides/how-to-fill-in-a-paper-time-card/">Filling In a Paper Time Card</a></li><li><a href="/bi-weekly-time-card-calculator/">Bi-Weekly Time Card Calculator</a></li></ul></div><div class="side-box"><h2>Private by design</h2><p style="margin:0;font-size:.92rem">Everything on this page is calculated in your browser. Nothing you type is sent to us.</p></div></aside></div>
 </div></main>
 <footer class="site-footer"><div class="container">
-<nav aria-label="Footer">
-<a href="/about/">About</a>
-<a href="/privacy/">Privacy</a>
-<a href="/contact/">Contact</a>
-<a href="/hours/">Shift hours index</a>
-</nav>
-<div class="copyright">&copy; <span id="year">2026</span> Time Card Calculator. Free tools, no sign-up. Results are estimates, not payroll advice.</div>
+<div class="foot-grid">
+<div><h2>Time Card Calculator</h2><p style="margin:0">Free, private work-hours calculators and plain-English guides. Results are estimates, not legal or payroll advice.</p></div>
+<div><h2>Calculators</h2><ul><li><a href="/time-card-calculator/">Time card calculator</a></li><li><a href="/overtime-calculator/">Overtime calculator</a></li><li><a href="/hours-calculator/">Hours calculator</a></li><li><a href="/paycheck-calculator/">Paycheck estimator</a></li><li><a href="/hourly-to-salary/">Hourly to salary</a></li><li><a href="/timesheet/">Printable timesheet</a></li></ul></div>
+<div><h2>Guides</h2><ul><li><a href="/overtime-rules/">Overtime rules by state</a></li><li><a href="/guides/exempt-vs-non-exempt/">Exempt vs non-exempt</a></li><li><a href="/guides/meal-and-rest-break-laws/">Meal and rest breaks</a></li><li><a href="/guides/rounding-time-cards/">Rounding time cards</a></li><li><a href="/guides/bi-weekly-vs-semi-monthly-pay/">Bi-weekly vs semi-monthly</a></li></ul></div>
+<div><h2>Site</h2><ul><li><a href="/about/">About</a></li><li><a href="/editorial-policy/">Editorial policy</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+</div>
+<div class="copyright">&copy; 2026 Time Card Calculator. Calculators run in your browser; your entries are not sent anywhere. Official-source rules were last checked October 21, 2026.</div>
 </div></footer>
-<script src="/assets/tools.js"></script>
+<script src="/assets/calc.js" defer></script>
+<script src="/assets/tools.js" defer></script>
 </body>
 </html>
