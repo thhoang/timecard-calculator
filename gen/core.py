@@ -254,7 +254,7 @@ def layout(page):
 </html>
 """.format(title=esc(page.title), desc=esc(page.desc), canon=canon, robots=robots, schema_html=schema_html,
            nav=nav_html(page.slug), body=page.body, site=SITE, ft=_ul(FOOT_TOOLS), fg=_ul(FOOT_GUIDES),
-           fs=_ul(FOOT_SITE), checked=CHECKED_LONG,
+           fs=_ul(FOOT_SITE).replace("</ul>", '<li><a href="https://aibrandvisibility.online" target="_blank" rel="noopener">AI Brand Visibility</a></li></ul>'), checked=CHECKED_LONG,
            og_type="article" if page.kind in ("guide", "prog") else "website",
            scripts=('<script src="/assets/calc.js" defer></script>\n<script src="/assets/tools.js" defer></script>' if 'data-tool="' in page.body else ""))
 
